@@ -1,21 +1,14 @@
-# Fall2018SoftwareProcess
-Fall 2018 Software Process assignments ... rubic's cube
+# PyCube
 
-This project is the starter code for the assignments in the 2018 Spring Semester offering
-of COMP5700/6700/6706  Software Process.
+## Purpose
 
-Notes:
-1)  Pull this code to GitHub Classroom
-2)  Change "manifest.yml" to reflect your AU username
-    Line 6:  is -> name: umphrda-rcube    should be -> name: username-rcube
- 	Line 7:  is -> host: umphrda-rcube    should be -> host: username-rcube
-3)  "dispatch.py" is your starting point
-	It is the dispatching function for the microservice.
-	It is passed the query string portion of the URL in Python dictionary format.
-	For example, an HTTP request consisting the URL below
-	     http://abc0001-rcube/mybluemix.net/rcube?op=init
-	will result in {'op':'init'} being passed as the value of "parm"
-4)  Place your production code in the body of the "RCube" directory.
-5)  Place your test code in the "test" directory
+This is the course project for the Software Process class offered at Auburn Univeristy (Spring 2019) by Dr. David Umphress.
+The students were tasked with implementing a rubix cube service. Requests would be parsed from the URL by Python's Flask and sent to the backend to be processed.
+
+Students were expected to use the test driven development software process during this project.
 
 
+## Structure
+All the source code is contained within `RCube`. In the root directory there is a `microservice.py` file. This was provided by the professor.
+Within `Rcube` is `test` and `xls`. `test` contains unit tests for this project. `xls` contains the reports that were submitted to the professor for grading.
+Interactions with the backend happens through the microservice file. 
